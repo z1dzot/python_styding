@@ -4,10 +4,20 @@
 # Реализовать вывод данных о пользователе одной строкой.
 
 
-def info(**kwargs):
-    return kwargs
+def info(first_name, last_name, b_year, city, email, phone_number):
+    return f'Name: {first_name}\n' \
+           f'last_name: {last_name}\n' \
+           f'b_year: {b_year}\n' \
+           f'city: {city}\n' \
+           f'email: {email}\n' \
+           f'phone_number: {phone_number}\n'
 
 
-print(f'first_name = {input("Enter your name: ")}; last_name = {input("Enter your last name: ")};'
-      f'b_year = {input("Enter ur birth date: ")}; city = {input("City u live: ")};'
-      f'email = {input("email address: ")}; phone_number = {int(input("Phone number: "))}')
+print(info(first_name= "Arman",
+           last_name= "Oganesyan",
+           b_year= "03.08.1990",
+           city= "Moscow",
+           email= "z1dzot@gmail.com",
+           phone_number="+123456789"))
+
+

@@ -3,10 +3,9 @@
 
 def function(var1, var2):
     try:
-        var = var1 / var2
-        return var
-    except ZeroDivisionError:
-        return "var2 not a zero. Enter only number!"
+        return var1 / var2
+    except ZeroDivisionError as err:
+        print("Error: ", err)
 
 
 print(function(int(input("Enter var1 = ")), int(input("Enter var2 = "))))
